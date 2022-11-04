@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<div>
+  <form action="form_ok.jsp" method="post">
+    <p><h3>Who are you?</h3></p>
+    <label for="name">Name:</label><br>
+    <input type="text" id="name" name="name" placeholder="Your name"><br>
+    <label for="age">Age:</label><br>
+    <input type="text" id="age" name="age" placeholder="Your age"><br><br>
+    <label for="major">Major:</label><br>
+    <input type="text" id="major" name="major" placeholder="Your major"><br><br>
+
+    <p><h3>What is your favourite Web language?</h3></p>
+    <input type="radio" id="html" name="fav_language" value="HTML">
+    <label for="html">HTML</label><br>
+    <input type="radio" id="css" name="fav_language" value="CSS">
+    <label for="css">CSS</label><br>
+    <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+    <label for="javascript">JavaScript</label><br><br>
+
+    <p><h3>I can speak ...</h3></p>
+    <input type="checkbox" id="lang1" name="lang1" value="English">
+    <label for="lang1"> English</label><br>
+    <input type="checkbox" id="lang2" name="lang2" value="French">
+    <label for="lang2"> French</label><br>
+    <input type="checkbox" id="lang3" name="lang3" value="German">
+    <label for="lang3"> German</label><br><br>
+
+    <label for="height">My height is:</label>
+    <select id="height" name="height">
+      <option value="151~160cm">151~160cm</option>
+      <option value="161~170cm">161~170cm</option>
+      <option value="171~180cm">171~180cm</option>
+      <option value="181~190cm">181~190cm</option>
+    </select><br><br>
+
+    <label for="birthday">My birthday:</label>
+    <input type="date" id="birthday" name="birthday"><br><br>
+
+    <textarea name="message" rows="10" cols="30">The cat was playing in the garden.</textarea><br><br>
+
+    <label for="fav_color">Select your favorite color:</label>
+    <input type="color" id="fav_color" name="fav_color"><br><br>
+
+    <p>My favourite music genre is</p>
+    <input list="music_genre" name="music_genre">
+    <datalist id="music_genre">
+      <option value="Pop">
+      <option value="Hip hop">
+      <option value="Rock">
+      <option value="Electronic">
+      <option value="Christian">
+    </datalist><br><br>
+
+    <input type="submit" value="Submit">
+
+  </form>
+</div>
+
+</body>
+</html>
