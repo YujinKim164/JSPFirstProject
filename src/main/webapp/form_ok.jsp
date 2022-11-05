@@ -13,12 +13,12 @@
   String age = request.getParameter("age");
   String major = request.getParameter("major");
   String fav_language = request.getParameter("fav_language");
-  /*String lang = request.getParameter("lang1");*/
-  String isCheck = request.getParameter("isCheck");
-  String isCheckMSG ="";
-  if(isCheck.equals("1")) isCheckMSG = "체크됨!";
+  String[] selected = request.getParameterValues("lang");
+  String height = request.getParameter("height");
   String birthday = request.getParameter("birthday");
   String message = request.getParameter("message");
+  String fav_color = request.getParameter("fav_color");
+  String fav_genre = request.getParameter("fav_genre");
 %>
 <html>
 <head>
@@ -32,9 +32,15 @@
     Age : <%=age%><br/>
     Major : <%=major%><br/>
     Favourite Web Language : <%=fav_language%><br/>
-    <!--I can speak : <%=lang1%><%=lang2%><%=lang3%><br/> -->
-    Height : <%=isCheckMSG%><br/>
+    Language You Can Speak : <br/>
+    <%for (int i=0; i<selected.length; i++){
+    %>
+    <%=selected[i]%><br>
+    <%}%>
+    Height : <%=height%> <br/>
     Birthday : <%=birthday%><br/>
     Message : <%=message%><br/>
+    Favourite Colour : <%=fav_color%><br/>
+    Favourite Music Genre : <%=fav_genre%><br/>
 </body>
 </html>
